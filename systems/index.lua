@@ -1,5 +1,7 @@
 return {
   require('systems.controls'),
+  require('systems.ephemeral'),
+  require('systems.gun'),
   require('systems.inputs'),
   require('systems.motion'),
   require('systems.sprite'),
