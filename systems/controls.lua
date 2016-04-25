@@ -7,9 +7,10 @@ local function Controls()
 
   function system:process(e, dt)
     local c, m = e.controls, e.motion
-    if love.keyboard.isDown(c.left) then
+
+    if c.left then
       m.ax = -m.amax
-    elseif love.keyboard.isDown(c.right) then
+    elseif c.right then
       m.ax = m.amax
     else
       m.ax = 0
