@@ -8,6 +8,8 @@ local function Controls()
   function system:process(e, dt)
     local c, m = e.controls, e.motion
 
+    if c.quit then love.event.push('quit') end
+
     if c.left then
       m.ax = -m.amax
     elseif c.right then
